@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Timeless Alterations</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/services.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="./index.html" class="logo">
+                <i class="fas fa-scissors logo-icon"></i>
+                <span>Timeless</span> Alterations
+            </a>
+            <button class="hamburger" id="hamburgerBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./services.html" class="active">Services</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="services-main">
+        <div class="services-hero">
+            <h1>Our Services</h1>
+            <p class="services-subtitle">Elevating your wardrobe with expert craftsmanship</p>
+        </div>
+        
+        <div class="services-grid">
+            <div class="service-card" data-service="hemming">
+                <div class="service-image-container">
+                    <div class="service-overlay"></div>
+                    <img src="https://weallsew.com/wp-content/uploads/sites/4/2019/07/Hemming_3_ways_09_blind_hem_finished_stitches_BERNINA_WeAllSew_Blog_300x247px.jpg" alt="Hemming Service" class="service-image">
+                </div>
+                <div class="service-content">
+                    <div class="service-header">
+                        <div class="service-icon">
+                            <i class="fas fa-scissors"></i>
+                        </div>
+                        <h2 class="service-title">Expert Hemming</h2>
+                    </div>
+                    <p class="service-description">Precision hemming for all garments, ensuring the perfect length and drape.</p>
+                    <div class="service-footer">
+                        <div class="price-info">
+                            <span class="starting-price">Starting at</span>
+                            <span class="price-amount">$15</span>
+                        </div>
+                        <button onclick="openServiceModal('hemming')" class="learn-more">View Details</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="service-card" data-service="suit">
+                <div class="service-image-container">
+                    <div class="service-overlay"></div>
+                    <img src="https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=800" alt="Suit Tailoring" class="service-image">
+                </div>
+                <div class="service-content">
+                    <div class="service-header">
+                        <div class="service-icon">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                        <h2 class="service-title">Suit Tailoring</h2>
+                    </div>
+                    <p class="service-description">Custom suit alterations for a perfect fit, including jacket and pants adjustments.</p>
+                    <div class="service-footer">
+                        <div class="price-info">
+                            <span class="starting-price">Starting at</span>
+                            <span class="price-amount">$45</span>
+                        </div>
+                        <button onclick="openServiceModal('suit')" class="learn-more">View Details</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="service-card" data-service="dress">
+                <div class="service-image-container">
+                    <div class="service-overlay"></div>
+                    <img src="https://images.unsplash.com/photo-1566174053879-31528523f8ae?w=800" alt="Dress Alterations" class="service-image">
+                </div>
+                <div class="service-content">
+                    <div class="service-header">
+                        <div class="service-icon">
+                            <i class="fas fa-female"></i>
+                        </div>
+                        <h2 class="service-title">Dress Alterations</h2>
+                    </div>
+                    <p class="service-description">Precise alterations for formal, wedding, and everyday dresses.</p>
+                    <div class="service-footer">
+                        <div class="price-info">
+                            <span class="starting-price">Starting at</span>
+                            <span class="price-amount">$35</span>
+                        </div>
+                        <button onclick="openServiceModal('dress')" class="learn-more">View Details</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="service-card" data-service="repairs">
+                <div class="service-image-container">
+                    <div class="service-overlay"></div>
+                    <img src="https://media.istockphoto.com/id/1210450226/photo/a-woman-is-repairing-ripped-blue-jeans-the-concept-of-economical-reuse-of-things-homemade.jpg?s=612x612&w=0&k=20&c=1e_0GhRV2xUiuMIr9dpmYsfJi_0rwOw-Dyo2StFNtx8=" alt="Repairs Service" class="service-image">
+                </div>
+                <div class="service-content">
+                    <div class="service-header">
+                        <div class="service-icon">
+                            <i class="fas fa-cut"></i>
+                        </div>
+                        <h2 class="service-title">Repairs</h2>
+                    </div>
+                    <p class="service-description">Expert repairs for tears, holes, and damaged seams.</p>
+                    <div class="service-footer">
+                        <div class="price-info">
+                            <span class="starting-price">Starting at</span>
+                            <span class="price-amount">$20</span>
+                        </div>
+                        <button onclick="openServiceModal('repairs')" class="learn-more">View Details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Timeless Alterations</h3>
+                <p>123 Stitch Street<br>Fashion District, NY 10001</p>
+            </div>
+            <div class="footer-section">
+                <h3>Hours</h3>
+                <p>Mon-Fri: 9am - 6pm<br>Sat: 10am - 4pm<br>Sun: Closed</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>Phone: (555) 123-4567<br>Email: info@timelessalterations.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Timeless Alterations. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-nav-overlay" id="mobileNav">
+        <div class="mobile-nav-content">
+            <div class="mobile-header">
+                <a href="./index.html" class="logo">
+                    <i class="fas fa-scissors logo-icon"></i>
+                    Timeless Alterations
+                </a>
+                <button class="close-nav" id="closeNav">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="mobile-menu">
+                <ul class="mobile-nav-links">
+                    <li><a href="./index.html">HOME</a></li>
+                    <li><a href="./services.html" class="active">SERVICES</a></li>
+                    <li><a href="./about.html">ABOUT</a></li>
+                    <li><a href="./contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="./js/main.js"></script>
+    <script>
+        // Card reveal animation
+        document.addEventListener('DOMContentLoaded', function() {
+            const revealCards = () => {
+                const cards = document.querySelectorAll('.reveal-card');
+                cards.forEach((card, index) => {
+                    const cardTop = card.getBoundingClientRect().top;
+                    const triggerBottom = window.innerHeight * 0.8;
+                    
+                    if (cardTop < triggerBottom) {
+                        card.style.opacity = '1';
+                        card.style.transform = 'translateY(0)';
+                        card.style.transitionDelay = `${index * 0.1}s`;
+                    }
+                });
+            };
+
+            window.addEventListener('scroll', revealCards);
+            window.addEventListener('load', revealCards);
+        });
+    </script>
+
+    <!-- Move the modal structure right before the closing body tag, after all other content -->
+    <div id="serviceModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2></h2>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <!-- Content will be dynamically inserted here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Make sure services.js is loaded after the modal structure -->
+    <script src="./js/services.js"></script>
+</body>
+</html> 
