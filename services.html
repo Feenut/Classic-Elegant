@@ -3,13 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Services - Timeless Alterations</title>
+    <title>Tailoring & Alteration Services | Timeless Alterations</title>
+    <meta name="description" content="Professional tailoring services including expert hemming, suit alterations, dress modifications, and clothing repairs. Quality craftsmanship guaranteed.">
+    <meta name="keywords" content="tailoring services, hemming, suit alterations, dress alterations, clothing repairs, professional tailor">
+    <meta name="robots" content="index, follow">
+    <!-- Open Graph tags -->
+    <meta property="og:title" content="Tailoring & Alteration Services | Timeless Alterations">
+    <meta property="og:description" content="Professional tailoring services including expert hemming, suit alterations, dress modifications, and clothing repairs.">
+    <meta property="og:url" content="https://timelessalterations.com/services.html">
+    <meta property="og:type" content="website">
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/services.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Add canonical URL -->
+    <link rel="canonical" href="https://timelessalterations.com/services.html">
 </head>
 <body>
     <header>
@@ -40,7 +50,7 @@
             <div class="service-card" data-service="hemming">
                 <div class="service-image-container">
                     <div class="service-overlay"></div>
-                    <img src="https://weallsew.com/wp-content/uploads/sites/4/2019/07/Hemming_3_ways_09_blind_hem_finished_stitches_BERNINA_WeAllSew_Blog_300x247px.jpg" alt="Hemming Service" class="service-image">
+                    <img src="https://weallsew.com/wp-content/uploads/sites/4/2019/07/Hemming_3_ways_09_blind_hem_finished_stitches_BERNINA_WeAllSew_Blog_300x247px.jpg" alt="Professional hemming service for pants, skirts and dresses at Timeless Alterations" class="service-image">
                 </div>
                 <div class="service-content">
                     <div class="service-header">
@@ -49,7 +59,7 @@
                         </div>
                         <h2 class="service-title">Expert Hemming</h2>
                     </div>
-                    <p class="service-description">Precision hemming for all garments, ensuring the perfect length and drape.</p>
+                    <p class="service-description">Precision hemming for all garments, ensuring the perfect length and drape. Our expert tailors provide professional hemming for pants, skirts, dresses, and more.</p>
                     <div class="service-footer">
                         <div class="price-info">
                             <span class="starting-price">Starting at</span>
@@ -131,7 +141,16 @@
         </div>
     </main>
 
-    
+    <!-- Add breadcrumbs navigation -->
+    <div class="breadcrumbs">
+        <div class="container">
+            <ul class="breadcrumb-list">
+                <li><a href="./index.html">Home</a></li>
+                <li><span>Services</span></li>
+            </ul>
+        </div>
+    </div>
+
     <footer>
         <div class="footer-content">
             <div class="footer-section">
@@ -214,5 +233,81 @@
 
     <!-- Make sure services.js is loaded after the modal structure -->
     <script src="./js/services.js"></script>
+
+    <!-- Add structured data for services -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "serviceType": "Tailoring Services",
+      "provider": {
+        "@type": "LocalBusiness",
+        "name": "Timeless Alterations",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "123 Stitch Street",
+          "addressLocality": "New York",
+          "addressRegion": "NY",
+          "postalCode": "10001",
+          "addressCountry": "US"
+        }
+      },
+      "areaServed": {
+        "@type": "City",
+        "name": "New York"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Tailoring Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Expert Hemming",
+              "description": "Precision hemming for all garments, ensuring the perfect length and drape."
+            },
+            "priceSpecification": {
+              "@type": "PriceSpecification",
+              "price": "15.00",
+              "priceCurrency": "USD"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Suit Tailoring",
+              "description": "Custom suit alterations for a perfect fit, including jacket and pants adjustments."
+            },
+            "priceSpecification": {
+              "@type": "PriceSpecification",
+              "price": "45.00",
+              "priceCurrency": "USD"
+            }
+          }
+        ]
+      }
+    }
+    </script>
+
+    <!-- Add breadcrumb schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://timelessalterations.com/"
+      },{
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Services",
+        "item": "https://timelessalterations.com/services.html"
+      }]
+    }
+    </script>
 </body>
 </html> 

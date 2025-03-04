@@ -2485,4 +2485,41 @@ select {
         width: 95%;  /* Slightly increased from 90% to 95% */
         height: 200px;
     }
+}
+
+/* Add breadcrumbs styling */
+.breadcrumbs {
+    background-color: var(--light-gray);
+    padding: 0.8rem 0;
+    margin-top: 80px;
+}
+
+.breadcrumb-list {
+    display: flex;
+    list-style: none;
+    gap: 0.5rem;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.breadcrumb-list li:not(:last-child)::after {
+    content: '/';
+    margin-left: 0.5rem;
+    color: #999;
+}
+
+.breadcrumb-list a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.breadcrumb-list a:hover {
+    color: var(--accent-color);
+}
+
+.breadcrumb-list span {
+    color: var(--accent-color);
 } 
